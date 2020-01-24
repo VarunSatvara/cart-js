@@ -11,3 +11,7 @@
 .fd {
     height: 50px;
 }
+
+#list li {
+    list-style: none;
+}

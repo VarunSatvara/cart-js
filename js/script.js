@@ -15,12 +15,13 @@ function add(item) {
 
 
 
+
     var list = document.getElementById("list");
 
     var ti = document.createElement('li');
-
     console.log(ti);
-    ti.innerHTML = '<div class="row"><div class="col-4"> <img src="' + img + '" class="img-fluid fd"></div><div class="col-4">vegatble food</div><div class="col-4">$15</div></div>';
+
+    ti.innerHTML = '<div class="row"><div class="col-4"> <img src="' + img + '" class="img-fluid fd"></div><div class="col-4 ">' + food.innerHTML + '</div><div class="col-4">' + price.innerHTML + '</div></div>';
 
 
     list.appendChild(ti);
