@@ -15,3 +15,7 @@
 #list li {
     list-style: none;
 }
+
+#list {
+    flex-direction: column;
+}
