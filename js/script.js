@@ -19,16 +19,11 @@ function add(item) {
     ti.classList.add("p-2");
     console.log(ti);
 
-    ti.innerHTML = '<div class="row"><div class="col-3"> <img src="' + img + '" class="img-fluid fd"></div><div class="col-3 ">' + food.innerHTML + '</div><div class="col-3">' + price.innerHTML + '</div><div class="col-3"><i class="fas fa-minus-circle minus" onclick="remove"></i></div></div>';
+    ti.onclick = function() {
+        this.parentNode.removeChild(this);
+    }
 
+    ti.innerHTML = '<div class="row"><div class="col-3"> <img src="' + img + '" class="img-fluid fd"></div><div class="col-3 ">' + food.innerHTML + '</div><div class="col-3">' + price.innerHTML + '</div><div class="col-3"><button onlclick="remove()">r</button></div></div>';
 
     list.appendChild(ti);
-
-
-}
-
-function remove() {
-    var myobj = document.getElementById("item");
-    myobj.remove();
-    console.log(myobj);
 }
